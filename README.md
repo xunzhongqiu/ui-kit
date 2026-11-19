@@ -1,6 +1,6 @@
 # @portfolio/api-guard
 
-[English](#english) | [ç®€ä½“ä¸­æ–‡](#ç®€ä½“ä¸­æ–‡)
+[English](#english) | [¼òÌåÖÐÎÄ](#¼òÌåÖÐÎÄ)
 
 ## English
 
@@ -27,9 +27,9 @@ createServer((req, res) => id(req, res, () => limit(req, res, () => {
 
 The limiter is process-local and resets on restart. Use a shared store for multi-instance deployments, configure trusted proxy handling before deriving client IPs, and add cleanup and observability suitable for your deployment.
 
-## ç®€ä½“ä¸­æ–‡
+## ¼òÌåÖÐÎÄ
 
-é€‚ç”¨äºŽ Node.js HTTP æœåŠ¡å™¨ã€ä¸Žå…·ä½“æ¡†æž¶æ— å…³çš„ä¸­é—´ä»¶åŸºç¡€å·¥å…·ã€‚è¿è¡Œæ—¶ä»…ä½¿ç”¨ Node.js å†…ç½®æ¨¡å—ã€‚
+ÊÊÓÃÓÚ Node.js HTTP ·þÎñÆ÷¡¢Óë¾ßÌå¿ò¼ÜÎÞ¹ØµÄÖÐ¼ä¼þ»ù´¡¹¤¾ß¡£ÔËÐÐÊ±½öÊ¹ÓÃ Node.js ÄÚÖÃÄ£¿é¡£
 
 ```ts
 import { createServer } from "node:http";
@@ -42,12 +42,12 @@ createServer((req, res) => id(req, res, () => limit(req, res, () => {
 }))).listen(3000);
 ```
 
-### åŠŸèƒ½
+### ¹¦ÄÜ
 
-- `requestId`ï¼šç”Ÿæˆ UUID å“åº”å¤´ï¼Œä¾¿äºŽå…³è”æ—¥å¿—ã€‚
-- `rateLimit`ï¼šåŸºäºŽå†…å­˜çš„å›ºå®šçª—å£é™æµå™¨ï¼Œè¿”å›žæ ‡å‡†é™æµå“åº”å¤´å’Œ `Retry-After`ã€‚
-- `errorHandler`ï¼šè®°å½•åŽŸå§‹å¼‚å¸¸ï¼Œå¹¶è¿”å›žé€šç”¨ JSON 500 å“åº”ã€‚
+- `requestId`£ºÉú³É UUID ÏìÓ¦Í·£¬±ãÓÚ¹ØÁªÈÕÖ¾¡£
+- `rateLimit`£º»ùÓÚÄÚ´æµÄ¹Ì¶¨´°¿ÚÏÞÁ÷Æ÷£¬·µ»Ø±ê×¼ÏÞÁ÷ÏìÓ¦Í·ºÍ `Retry-After`¡£
+- `errorHandler`£º¼ÇÂ¼Ô­Ê¼Òì³££¬²¢·µ»ØÍ¨ÓÃ JSON 500 ÏìÓ¦¡£
 
-### ç”Ÿäº§çŽ¯å¢ƒè¯´æ˜Ž
+### Éú²ú»·¾³ËµÃ÷
 
-é™æµçŠ¶æ€ä»…ä¿å­˜åœ¨å½“å‰è¿›ç¨‹ä¸­ï¼ŒæœåŠ¡é‡å¯åŽä¼šæ¸…ç©ºã€‚å¤šå®žä¾‹éƒ¨ç½²åº”ä½¿ç”¨å…±äº«å­˜å‚¨ï¼›æ ¹æ®å¯ä¿¡ä»£ç†é…ç½®èŽ·å–å®¢æˆ·ç«¯ IPï¼Œå¹¶æŒ‰éƒ¨ç½²éœ€æ±‚è¡¥å……æ¸…ç†å’Œå¯è§‚æµ‹æ€§æœºåˆ¶ã€‚
+ÏÞÁ÷×´Ì¬½ö±£´æÔÚµ±Ç°½ø³ÌÖÐ£¬·þÎñÖØÆôºó»áÇå¿Õ¡£¶àÊµÀý²¿ÊðÓ¦Ê¹ÓÃ¹²Ïí´æ´¢£»¸ù¾Ý¿ÉÐÅ´úÀíÅäÖÃ»ñÈ¡¿Í»§¶Ë IP£¬²¢°´²¿ÊðÐèÇó²¹³äÇåÀíºÍ¿É¹Û²âÐÔ»úÖÆ¡£
